@@ -1,0 +1,129 @@
+.about {
+    height: 613px;
+    width: 100%;
+    background-image: url('../../assets/Building3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 150px;
+    &_textarea {
+        height: 90%;
+        width: 1200px;
+        background-color:whitesmoke;
+        margin-top: 0px;
+        margin: 0 auto;
+        padding-top: 120px;
+        width: 1060px;
+        border-radius: 40px;
+        text-align: center;
+        letter-spacing: 4px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        line-height: 21px;
+
+    }
+    &_top-text {
+        font-weight: bold;
+        //color: #0470b0;
+        color: #1a406e;
+        border-color: black;
+        font-size: large;
+        transition: 2s;
+        margin-top: -48px;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+               &:hover {
+                font-size: 25px;
+               }
+
+    }
+    &_bottom-text {
+        font-family: 'Roboto', serif;
+        font-size: 13px;
+        padding: 2px 15px 2px 15px;
+        text-align: left;
+        //text-indent: 20px;
+        line-height: 19px;
+        font-weight: 500;
+        margin-top: -6px ;
+        letter-spacing: 1px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.firstword2 {
+    font-weight: bold;
+    color: #0470b0;
+    border-color: black;
+    font-size: large;
+    transition: 2s;
+}
+
+// poniżej 100px
+
+@media all and (max-width: 999px) {
+    .about {
+        height: 130%;
+        width: 100%;
+        background-color: whitesmoke;
+       padding-top: 150px;
+        &_textarea {
+            width: 100%;
+            background-color:whitesmoke;
+            margin-top: 0px;
+            margin: 0 auto;
+            padding-top: 150px;
+            width: 100%;
+            border-radius: 40px;
+            text-align: center;
+            letter-spacing: 4px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            line-height: 21px;
+    
+        }
+        &_top-text {
+            font-weight: bold;
+            //color: #0470b0;
+            color: #1a406e;
+            border-color: black;
+            font-size: large;
+            transition: 2s;
+            margin-top: -48px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+                   &:hover {
+                    font-size: 25px;
+                   }
+    
+        }
+        &_bottom-text {
+            font-family: 'Roboto', serif;
+            font-size: 13px;
+            padding: 2px 15px 2px 15px;
+            text-align: left;
+            //text-indent: 20px;
+            line-height: 19px;
+            font-weight: 500;
+            margin-top: -6px ;
+            letter-spacing: 1px;
+    
+        }
+    
+    
+    }
+    
+  }

@@ -1,0 +1,52 @@
+.clients {
+    //: 100vh;
+    width: 100%;
+    background-image: url('../../assets/Building2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+      &_area {
+        //height: 90%;
+        width: 1200px;
+        background-color: whitesmoke;
+        margin-top: 0px;
+        padding-top: 1px;
+        height: 78%;
+        width: 1200px;
+        background-color:whitesmoke;
+        font-family: 'Roboto', serif;
+        margin-top: 0px;
+        margin: 0 auto;
+        padding-top: 120px;
+        width: 1060px;
+        border-radius: 40px;
+        text-align: center;
+        //letter-spacing: 4px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        line-height: 31px;
+    }
+    &_description {
+        color: black;
+        font-size: 13px;
+        text-indent: 10px;
+        letter-spacing: 1px;
+    }
+    &_title {
+        color: #1a406e;
+        font-size: 20px;
+        margin-top: 33px;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+
+    }
+    &_map {
+        margin-top:10px;
+    }
+
+
+}
+
+
+
+
+

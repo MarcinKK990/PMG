@@ -1,0 +1,42 @@
+.concept {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: left;
+    padding-left: 21px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-top: 24px;
+       &_title {
+           color: #1a406e;
+           font-size: 15px;
+           letter-spacing: 1px;
+       }
+       &_description {
+           color: black;
+           font-size: 13px;
+           text-indent: 10px;
+           letter-spacing: 1px;
+           padding-right: 40px;
+       }
+
+  }
+
+  .concept--first {
+    margin-top: 60px;
+  }
+
+  .concept--last {
+      padding-bottom:10px;
+  }
+
+
+  .dot {
+    &::before {
+        content: "\2022";
+        color: #1D70B7;
+        font-weight: bold;
+        display: inline-block; ;
+        margin-right: 70px;
+        font-size: 30px;
+    }
+  }

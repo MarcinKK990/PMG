@@ -1,0 +1,177 @@
+.contact {
+    width: 100%;
+    height:100%;
+    background-image: url('../../assets/Building8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    justify-content: space-around; 
+    font-family: 'Roboto', serif;
+    font-weight: 500;
+
+    &_area {
+      margin-top: 0px;
+      border: 10px lightsalmon;
+      box-shadow: blue;
+      padding-top: 115px;
+      padding-left:10%;
+  }
+
+  &_adress {
+    //height: 100%;
+    //height:100%;
+    width: 50%;
+    margin-left: 19%;
+    padding-top: 10%;
+    //background-color: whitesmoke;
+  }
+  &_title {
+    color: #1a406e;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+  &_description {
+    //color: #13e3f8;
+    color: #1a406e;
+    font-size: 18px;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    //text-shadow: 2px 2px black;
+    font-weight: 600;
+}
+}
+
+
+.input-container {
+    height: 50px;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 10px;
+  }
+  
+  .ic2 {
+    margin-top: 10px;
+  }
+  
+  .ooo {
+    background-color: whitesmoke;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .submit {
+    background-color: #1a406e;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    // outline: 0;
+    text-align: center;
+    width: 100%;
+    transition: 2s;
+    &:hover {
+      font-size: 20px;
+      background-color: blue;
+    }
+  }
+  
+  .submit:active {
+    background-color: blue;
+  }
+  
+  .form-style-6{
+	font-family: 'Roboto', serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+  padding-top: 13px;
+  border-radius: 6px;
+}
+.form-style-6 h1{
+	background: #0470b0;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+  transition: 2s;
+  &:hover {
+    background-color: blue;
+  }
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+	//-@at-root: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+	box-shadow: 0 0 5px #0470b0;
+	padding: 3%;
+	border: 1px solid #0470b0;
+}
+
+.submit {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #0470b0;
+	border-bottom: 2px solid #0470b0;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.submit:hover,
+.submit:hover{
+	background: #0470b0;
+}
