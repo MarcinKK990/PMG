@@ -1,123 +1,91 @@
 .opening {
- height: 100vh;
- max-width: 100%;
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
- animation: slide 40s infinite;
- z-index: -1;
-    &_load {
-        animation: slide 2s;
-    }
-    &_content {
-        color: white;
-        width: 20px;
-        height: 20px;
-    }
-    &_principal {
-        position: absolute;
-        letter-spacing: 5px;
-        text-align: center;
-        color: white;
-        margin: 12% 36%;
-}
-    &_top-text {
-        margin: 0;
-        color: #13e3f8;
-        text-shadow: 2px 2px black;
-        font-family: 'Roboto', serif;
-        letter-spacing: 4px;
-    }
-    &_bottom-text {
-        margin: 0;
-        color: #13e3f8;
-        text-shadow: 2px 2px black;
-        font-family: 'Roboto', serif;
-        
-            
-        
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 100px 0;
+  min-height: calc(100vh - 100px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slide 40s infinite;
+  z-index: 0;
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(23, 23, 23, 0.8);
+    z-index: -1;
+  }
+
+  &_load {
+    animation: slide 2s;
+  }
+
+  &__principal {
+    font-family: 'Roboto', serif;
+  }
+
+  &__text {
+    letter-spacing: 2px;
+    font-size: 65px;
+    color: #ffffff;
+    span {
+      border-top: 1px solid #ffffff;
+      display: block;
+      margin-top: 20px;
+      padding-top: 20px;
+      font-size: 0.5em;
+      font-weight: 400;
+      letter-spacing: 5px;
     }
 
+    @media (max-width: 991.98px) {
+      font-size: 50px;
+    }
 
+    @media (max-width: 767.98px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 30px;
+    }
+  }
 }
 
 @keyframes slide {
-    0% {
-        background-image: url('../../assets/Building1.jpg');
-    }
-    20% {
-        background-image: url('../../assets/Building1.jpg');
-    }
-    20.01% {
-        background-image: url('../../assets/Building2.jpg');
-    }
-    40% {
-        background-image: url('../../assets/Building2.jpg');
-    }
-    40.01% {
-        background-image: url('../../assets/Building3.jpg');
-    }
-    60% {
-        background-image: url('../../assets/Building3.jpg');
-    }
-    60.01% {
-        background-image: url('../../assets/Building4.jpg');
-    }
-    80% {
-        background-image: url('../../assets/Building5.jpg');
-    }
-    80.01% {
-        background-image: url('../../assets/Building5.jpg');
-    }
-    100% {
-        background-image: url('../../assets/Building5.jpg');
-    }
-    
-}
-
-
-//@keyframes ani2 {
-    //20%{
-       // opacity:0.2;
-       // font-size: 20px;
-    //}
-   // 40% {
-       // opacity:0.4;
-       // font-size: 24px;
-    //}
-   // 60%{
-        //opacity:0.6;
-        //font-size: 28px;
-    //}
-   // 80%{
-        //opacity:0.8;
-       // font-size: 33px;
-    //}
-    //100%{
-       // opacity:1;
-        //font-size: 35px;
-    //}
-
-//}
-
-
-
-
-
-// Max 1000px
-
-@media all and (max-width: 999px) {
-    .opening_principal {
-      color: red;
-    }
-
-    .opening_top-text {
-        display: none;
-        
-    }
-    .opening_bottom-text {
-        display:none;
-
-    }
+  0% {
+    background-image: url('../../assets/Building1.jpg');
   }
+  20% {
+    background-image: url('../../assets/Building1.jpg');
+  }
+  20.01% {
+    background-image: url('../../assets/Building2.jpg');
+  }
+  40% {
+    background-image: url('../../assets/Building2.jpg');
+  }
+  40.01% {
+    background-image: url('../../assets/Building3.jpg');
+  }
+  60% {
+    background-image: url('../../assets/Building3.jpg');
+  }
+  60.01% {
+    background-image: url('../../assets/Building4.jpg');
+  }
+  80% {
+    background-image: url('../../assets/Building5.jpg');
+  }
+  80.01% {
+    background-image: url('../../assets/Building5.jpg');
+  }
+  100% {
+    background-image: url('../../assets/Building5.jpg');
+  }
+}

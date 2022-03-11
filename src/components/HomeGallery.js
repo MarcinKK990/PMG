@@ -1,23 +1,17 @@
 import React from 'react';
+import Container from "@mui/material/Container";
 
 function HomeGallery() {
     return (
         <div className="opening">
-           <div className="opening_load"></div>
-           <div className="opening_content">
-               <div className="opening_principal">
-                   <h1 className="opening_top-text">Komfort, bezpieczeństwo <br/ > i zadowolenie naszych klientów </h1>
-                  <h1 className="opening_bottom-text">to dla nas najważniejsze <br/ > wartości</h1>
-               </div>
-           </div>
+            <Container>
+                <div className="opening__principal">
+                    <h1 className="opening__text">Komfort, bezpieczeństwo i zadowolenie naszych klientów <span>to dla nas najważniejsze wartości</span>
+                    </h1>
+                </div>
+            </Container>
         </div>
     );
-
-
-
-
-
-
 }
 
 export default HomeGallery;

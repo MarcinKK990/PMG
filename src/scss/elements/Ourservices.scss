@@ -1,151 +1,91 @@
 .our-services {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 100px 0;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background-image: url('../../assets/Building1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    background-image: url('../../assets/Building3.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
-    &_view {
-      height: 100%;
-       width: 1200px;
-       background-color: whitesmoke;
-       margin-top: 0px;
-       margin: 0 auto;
-       padding-top: 120px;
-       width: 1060px;
-       border-radius: 40px;
-       text-align: center;
-       letter-spacing: 4px;
-       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-       line-height: 31px;
-        
+    background: rgba(23, 23, 23, 0.8);
+    z-index: -1;
+  }
 
-        
+  .MuiTab-wrapper {
+    color: #808080;
+    font-size: 11px;
+  }
 
-    } 
-}
- 
+  .MuiTab-root {
+    max-width: 200px;
+  }
 
-.switchWhoHelp {
-    margin-top: 50px;
-    margin-left: 225px;
-    display: flex;
-    justify-content: space-around;
-    width: 55%;
-     button {
-        margin: 0 5px;
-        font-size: 17px;
-        font-weight: bold;
-        background-color: white;
-        cursor: pointer;
-       padding: 9px;
-       outline: 0;
-      //border: 2px solid black;
-      font-family: 'Roboto', sans-serif;
-      color: white;
-      font-style:italic;
-       font-size: 13px;
-       letter-spacing: 2px;
-       transition: 2s;
-       border-radius: 6px;
-       box-shadow: 3px 5px lightgrey;
-       color: #1a406e;  /* fallback for old browsers */
-          //color: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-          //color: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-       
-	
-        &:hover {
-          background-color: #1a406e;  /* fallback for old browsers */
-          //background-color: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-          //background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          color: white;
-          //font-size: 14px;
-          //font-style: italic;
+  &__textarea {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 50px;
+    color: #333333;
 
-    
-        }
-       
-      
-     
-      
-        
+    @media (max-width: 575.98px) {
+      padding: 30px 20px;
     }
-  
-
-  
-
-  .firstDivInfo {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 13px;
-    color: black;
-    font-size: 13px;
-    //letter-spacing: 4px;
-    //font-weight: bold;
-    margin-top: 70px;
   }
 
-  .secondDivInfo {
-      padding-top:55px;
-  }
-
-  .thirdDivInfo {
-      padding-top: 55px;
-  }
-
-  .text3 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 13px;
-    color: yellow;
-    font-size: 30px;
-    //letter-spacing: 4px;
-    text-align: left;
-    padding-left: 32px;
-    line-height: 25px;
-    font-weight: 700;
-
-  }
-
-  
-
-  .text4 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 13px;
-    color: black;
-    font-size: 13px;
-    letter-spacing: 4px;
-    font-weight: bold;
-    transition: 2s;
-
-
-  }
-
-  .text4:hover {
-      font-size: 15px;
-  }
-
-.a {
-    font-weight: bold;
+  &__title {
+    margin: 0;
     color: #0470b0;
-    font-size: 70px;
-    padding-right: 70px;
-};
-
-
-
-
-}
-
-
-
-
-@media all and (max-width: 999px) {
-  .switchWhoHelp {
-    margin-top: -65px;
-    margin-left: 11px;
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
-    flex-direction: column;
+    border-bottom: 1px solid rgba(grey, 0.3);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
   }
-    
-  
+
+  .content {
+    &__title {
+      font-family: 'Roboto', serif;
+      font-size: 20px;
+      color: #333333;
+    }
+
+    &__unordered-list {
+      color: #333333;
+    }
+
+    &__ordered-list {
+      color: #333333;
+    }
+
+    &__paragraph {
+      color: #333333;
+    }
+
+    &__section {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+    }
+  }
 }
