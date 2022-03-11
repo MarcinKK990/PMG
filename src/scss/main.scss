@@ -1,16 +1,25 @@
-@import "../scss/base.scss";
-@import "../scss/elements/Home.scss";
-@import "../scss/elements/HomeGallery.scss";
-@import "../scss/elements/About.scss";
-@import "../scss/elements/Contact.scss";
-@import "../scss/elements/Clients.scss";
-@import "../scss/elements/Ourservices.scss";
-@import "../scss/settings/fonts.scss";
-@import "../scss/elements/DivInfoComponents/firstDivInfo.scss";
-@import "./elements/DivInfoComponents/secondDivInfo.scss";
-@import "./elements/DivInfoComponents/thirdDivInfo.scss";
-@import "./elements/DivInfoComponents/fourthDivInfo.scss";
-@import "./elements/DivInfoComponents/fifthDivInfo.scss";
-@import "./elements/DivInfoComponents/sixthDivInfo.scss";
+// Breakpoints
+//@media (max-width: 575.98px) { ... }
 
+// Small devices (landscape phones, less than 768px)
+//@media (max-width: 767.98px) { ... }
 
+// Medium devices (tablets, less than 992px)
+//@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+//@media (max-width: 1199.98px) { ... }
+
+// Importing bootstrap styles library
+@import "./bootstrap/bootstrap";
+
+// Importing custom styles
+@import "./base";
+@import "./elements/Home";
+@import "./elements/Navigation";
+@import "./elements/HomeGallery";
+@import "./elements/About";
+@import "./elements/Contact";
+@import "./elements/Clients";
+@import "./elements/Ourservices";
+@import "./settings/fonts";
